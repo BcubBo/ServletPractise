@@ -11,12 +11,18 @@
   </welcome-file-list>
   
   <servlet>
-  	<servlet-name>servletThree</servlet-name>
-  	<servlet-class>com.lovebcub.web.servlet.servletThree</servlet-class>
+  		<servlet-name>servletThree</servlet-name>
+  		<servlet-class>com.lovebcub.web.servlet.servletThree</servlet-class>
+  	<init-param>
+  		<param-name>charSetContent</param-name>
+  		<param-value>utf-8</param-value>
+  	
+  	</init-param>
   </servlet>
   <servlet-mapping>
   	<servlet-name>servletThree</servlet-name>
   	<url-pattern>/servletThree</url-pattern>
   	
   </servlet-mapping>
+  
 </web-app>
